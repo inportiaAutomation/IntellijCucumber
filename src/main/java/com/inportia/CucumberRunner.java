@@ -7,9 +7,10 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions
         (
-                features = "C:\\Users\\GS-1034\\IdeaProjects\\CucumberTutorial\\src\\test\\java\\com\\inportia\\TestNGDemo\\fetaures",
+                features = "src\\test\\java\\com\\inportia\\TestNGDemo\\features",
                 glue = "com\\inportia\\TestNGDemo\\stepDefs",
-                tags = {"@test_01"}
+                tags = {"@test","~@test_02"},
+                format = {"pretty","html:target_html/html/cucumber.html","json:target_json/cucumber.json"}
         )
 
 public class CucumberRunner
