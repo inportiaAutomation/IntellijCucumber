@@ -4,6 +4,8 @@ Feature: Test the new homepage
 @test_01
 Scenario: Test the homepage scenario
 * user is on the homepage
+* then user closes the page
+
 
 @test_02
 Scenario Outline: test the table example

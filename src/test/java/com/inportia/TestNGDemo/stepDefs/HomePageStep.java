@@ -1,6 +1,7 @@
 package com.inportia.TestNGDemo.stepDefs;
 
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.*;
@@ -14,9 +15,9 @@ public class HomePageStep
     private String target_url = "http://www.empoweringindia.org/new/home.aspx";
 
 
-    @Given("^user is on the homepage$")
+    @When("^user is on the homepage$")
     public void user_is_on_the_homepage() throws Throwable {
-        System.out.println("Hello World from cucumber.");
+
         String currentDir = System.getProperty("user.dir");
         String driver_loc = currentDir + "\\src\\test\\java\\com\\inportia\\TestNGDemo\\tools\\chromedriver.exe";
         System.out.print(driver_loc);
@@ -27,6 +28,17 @@ public class HomePageStep
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(target_url);
     }
+
+
+    @When("^then user closes the page$")
+    public void then_user_closes_the_page() throws Throwable {
+        Thread.sleep(4000);
+        driver.close();
+    }
+
+
+
+
 
     @Given("^user is entering the username \"([^\"]*)\"$")
     public void user_is_entering_the_username(String arg1) throws Throwable {
