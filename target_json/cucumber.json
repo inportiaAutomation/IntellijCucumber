@@ -1,0 +1,80 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 240992,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.set_up()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Test the homepage scenario",
+        "description": "",
+        "id": "test-the-new-homepage;test-the-homepage-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 72256,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tear_down()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13694097646,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on the homepage",
+            "match": {
+              "location": "HomePageStep.user_is_on_the_homepage()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4241120482,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "then user closes the page",
+            "match": {
+              "location": "HomePageStep.then_user_closes_the_page()"
+            },
+            "keyword": "* "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@test_01"
+          }
+        ]
+      }
+    ],
+    "name": "Test the new homepage",
+    "description": "",
+    "id": "test-the-new-homepage",
+    "keyword": "Feature",
+    "uri": "HomePage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@test"
+      }
+    ]
+  }
+]
