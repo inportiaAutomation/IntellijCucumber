@@ -15,18 +15,17 @@ Examples:
 
 
 
-@wip
 Scenario: test the parameter
 Given this is my first row value for second test "PRAVIN    "
 And this is my second row value for second test "PWD"
 
-@wip
+
 Scenario: test the parameter
 Given this is my first row value for second test "Pooja    "
 And this is my second row value for second test "PWD"
 
 
-@wip
+
 Scenario: test the parameter
 Given this is my first row value for second test "Manish    "
 And this is my second row value for second test "PWD"
