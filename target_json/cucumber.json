@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 814253,
+              "duration": 1328294,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 239058,
+              "duration": 218959,
               "status": "passed"
             },
             "match": {
@@ -34,38 +34,60 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 19326350168,
+              "status": "passed"
             },
             "line": 26,
             "name": "user is on homepage",
-            "match": {},
+            "match": {
+              "location": "HomePageStep.user_is_on_homepage()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1205764094,
+              "status": "passed"
             },
             "line": 27,
             "name": "user selects year \"2014\" and states \"Maharashtra\" from PC Elelections(Lok Sabha)",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "2014",
+                  "offset": 19
+                },
+                {
+                  "val": "Maharashtra",
+                  "offset": 37
+                }
+              ],
+              "location": "HomePageStep.user_selects_year_and_states_from_PC_Elelections_Lok_Sabha(String,String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2449321270,
+              "status": "passed"
             },
             "line": 28,
             "name": "Clicks go",
-            "match": {},
+            "match": {
+              "location": "HomePageStep.clicks_go()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 105203,
+              "status": "passed"
             },
             "line": 29,
             "name": "value for BJP in table should not be null",
-            "match": {},
+            "match": {
+              "location": "HomePageStep.value_for_BJP_in_table_should_not_be_null()"
+            },
             "keyword": "Then "
           }
         ],
@@ -92,237 +114,5 @@
         "name": "@test"
       }
     ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 694083,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.set_up()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "test the parameter",
-        "description": "",
-        "id": "test-the-table;test-the-parameter",
-        "after": [
-          {
-            "result": {
-              "duration": 520882,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tear_down()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 914731318,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "this is my first row value for second test \"PRAVIN    \"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "PRAVIN    ",
-                  "offset": 44
-                }
-              ],
-              "location": "TestTableStep.this_is_my_first_row_value_for_second_test(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 648752,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "this is my second row value for second test \"PWD\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "PWD",
-                  "offset": 45
-                }
-              ],
-              "location": "TestTableStep.this_is_my_second_row_value_for_second_test(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 18,
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 250605,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.set_up()"
-            }
-          }
-        ],
-        "line": 24,
-        "name": "test the parameter",
-        "description": "",
-        "id": "test-the-table;test-the-parameter",
-        "after": [
-          {
-            "result": {
-              "duration": 504205,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tear_down()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 674410,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "this is my first row value for second test \"Pooja    \"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Pooja    ",
-                  "offset": 44
-                }
-              ],
-              "location": "TestTableStep.this_is_my_first_row_value_for_second_test(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 629935,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "this is my second row value for second test \"PWD\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "PWD",
-                  "offset": 45
-                }
-              ],
-              "location": "TestTableStep.this_is_my_second_row_value_for_second_test(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 23,
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 518744,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.set_up()"
-            }
-          }
-        ],
-        "line": 30,
-        "name": "test the parameter",
-        "description": "",
-        "id": "test-the-table;test-the-parameter",
-        "after": [
-          {
-            "result": {
-              "duration": 147968,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tear_down()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 712900,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "this is my first row value for second test \"Manish    \"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Manish    ",
-                  "offset": 44
-                }
-              ],
-              "location": "TestTableStep.this_is_my_first_row_value_for_second_test(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 291660,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "this is my second row value for second test \"PWD\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "PWD",
-                  "offset": 45
-                }
-              ],
-              "location": "TestTableStep.this_is_my_second_row_value_for_second_test(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 29,
-            "name": "@wip"
-          }
-        ]
-      }
-    ],
-    "name": "test the table",
-    "description": "",
-    "id": "test-the-table",
-    "keyword": "Feature",
-    "uri": "TestTable.feature"
   }
 ]

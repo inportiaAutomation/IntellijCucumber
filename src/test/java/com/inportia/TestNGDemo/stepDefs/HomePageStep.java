@@ -57,23 +57,32 @@ public class HomePageStep
     
     
 	WebDriver driver;
-	HomePage home_page = new HomePage(driver);
+	HomePage home_page; 
 	
 	
-    
     @Given("^user is on homepage$")
     public void user_is_on_homepage() throws Throwable {
-        
+    	
+    	String path_chrome = System.getProperty("user.dir") + "\\src\\test\\java\\com\\inportia\\TestNGDemo\\tools\\chromedriver.exe";
+    	System.setProperty("webdriver.chrome.driver", path_chrome);
+    	
+    	driver = new ChromeDriver();
+    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    	driver.manage().window().maximize();
+    	
+        home_page = new HomePage(driver);
+    	home_page.user_goes__to_homepage();
     }
 
     @When("^user selects year \"([^\"]*)\" and states \"([^\"]*)\" from PC Elelections\\(Lok Sabha\\)$")
     public void user_selects_year_and_states_from_PC_Elelections_Lok_Sabha(String arg1, String arg2) throws Throwable {
-      
+       home_page.select_year_pc(arg1);
+       home_page.select_states_pc(arg2);
     }
 
     @When("^Clicks go$")
     public void clicks_go() throws Throwable {
-
+        home_page.click_go_pc();
     }
 
     @Then("^value for BJP in table should not be null$")

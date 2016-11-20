@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 814253,
+  "duration": 1328294,
   "status": "passed"
 });
 formatter.scenario({
@@ -54,206 +54,46 @@ formatter.step({
   "name": "value for BJP in table should not be null",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "duration": 239058,
-  "status": "passed"
-});
-formatter.uri("TestTable.feature");
-formatter.feature({
-  "line": 2,
-  "name": "test the table",
-  "description": "",
-  "id": "test-the-table",
-  "keyword": "Feature"
-});
-formatter.before({
-  "duration": 694083,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 19,
-  "name": "test the parameter",
-  "description": "",
-  "id": "test-the-table;test-the-parameter",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 18,
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "line": 20,
-  "name": "this is my first row value for second test \"PRAVIN    \"",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 21,
-  "name": "this is my second row value for second test \"PWD\"",
-  "keyword": "And "
-});
 formatter.match({
-  "arguments": [
-    {
-      "val": "PRAVIN    ",
-      "offset": 44
-    }
-  ],
-  "location": "TestTableStep.this_is_my_first_row_value_for_second_test(String)"
+  "location": "HomePageStep.user_is_on_homepage()"
 });
 formatter.result({
-  "duration": 914731318,
+  "duration": 19326350168,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "PWD",
-      "offset": 45
+      "val": "2014",
+      "offset": 19
+    },
+    {
+      "val": "Maharashtra",
+      "offset": 37
     }
   ],
-  "location": "TestTableStep.this_is_my_second_row_value_for_second_test(String)"
+  "location": "HomePageStep.user_selects_year_and_states_from_PC_Elelections_Lok_Sabha(String,String)"
 });
 formatter.result({
-  "duration": 648752,
+  "duration": 1205764094,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomePageStep.clicks_go()"
+});
+formatter.result({
+  "duration": 2449321270,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomePageStep.value_for_BJP_in_table_should_not_be_null()"
+});
+formatter.result({
+  "duration": 105203,
   "status": "passed"
 });
 formatter.after({
-  "duration": 520882,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 250605,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 24,
-  "name": "test the parameter",
-  "description": "",
-  "id": "test-the-table;test-the-parameter",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 23,
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "line": 25,
-  "name": "this is my first row value for second test \"Pooja    \"",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 26,
-  "name": "this is my second row value for second test \"PWD\"",
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Pooja    ",
-      "offset": 44
-    }
-  ],
-  "location": "TestTableStep.this_is_my_first_row_value_for_second_test(String)"
-});
-formatter.result({
-  "duration": 674410,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "PWD",
-      "offset": 45
-    }
-  ],
-  "location": "TestTableStep.this_is_my_second_row_value_for_second_test(String)"
-});
-formatter.result({
-  "duration": 629935,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 504205,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 518744,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 30,
-  "name": "test the parameter",
-  "description": "",
-  "id": "test-the-table;test-the-parameter",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 29,
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "line": 31,
-  "name": "this is my first row value for second test \"Manish    \"",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 32,
-  "name": "this is my second row value for second test \"PWD\"",
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Manish    ",
-      "offset": 44
-    }
-  ],
-  "location": "TestTableStep.this_is_my_first_row_value_for_second_test(String)"
-});
-formatter.result({
-  "duration": 712900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "PWD",
-      "offset": 45
-    }
-  ],
-  "location": "TestTableStep.this_is_my_second_row_value_for_second_test(String)"
-});
-formatter.result({
-  "duration": 291660,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 147968,
+  "duration": 218959,
   "status": "passed"
 });
 });

@@ -18,7 +18,13 @@ public class HomePage {
       By drop_down_year_pc = By.id("year");
       By drop_down_states_pc = By.id("state");
       By go_pc = By.xpath(".//*[@id='form']/input");
- 
+      String homepage_url = "http://www.indiavotes.com/";
+      
+      
+      public void user_goes__to_homepage()
+      {
+    	  driver.get(homepage_url);
+      }
       
       public void select_year_pc(String value)
       {
