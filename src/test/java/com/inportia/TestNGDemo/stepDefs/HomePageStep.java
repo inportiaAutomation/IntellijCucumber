@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.MarionetteDriver;
 
 import com.inportia.TestNGDemo.pageObject.HomePage;
+import com.inportia.TestNGDemo.pageObject.PCElectionsResult;
 
 import org.openqa.selenium.*;
 
@@ -58,7 +59,7 @@ public class HomePageStep
     
 	WebDriver driver;
 	HomePage home_page; 
-	
+	PCElectionsResult  pc_result;
 	
     @Given("^user is on homepage$")
     public void user_is_on_homepage() throws Throwable {
@@ -87,7 +88,11 @@ public class HomePageStep
 
     @Then("^value for BJP in table should not be null$")
     public void value_for_BJP_in_table_should_not_be_null() throws Throwable {
-    
+       pc_result = new PCElectionsResult(driver);
+       pc_result.get_bjp_vote_pc("BJP");
+       
+       
+       driver.close();
     }
     
     

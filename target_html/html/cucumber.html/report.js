@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 1328294,
+  "duration": 712044,
   "status": "passed"
 });
 formatter.scenario({
@@ -58,7 +58,7 @@ formatter.match({
   "location": "HomePageStep.user_is_on_homepage()"
 });
 formatter.result({
-  "duration": 19326350168,
+  "duration": 16121513656,
   "status": "passed"
 });
 formatter.match({
@@ -75,25 +75,25 @@ formatter.match({
   "location": "HomePageStep.user_selects_year_and_states_from_PC_Elelections_Lok_Sabha(String,String)"
 });
 formatter.result({
-  "duration": 1205764094,
+  "duration": 772108224,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageStep.clicks_go()"
 });
 formatter.result({
-  "duration": 2449321270,
+  "duration": 1754145038,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageStep.value_for_BJP_in_table_should_not_be_null()"
 });
 formatter.result({
-  "duration": 105203,
+  "duration": 5685305546,
   "status": "passed"
 });
 formatter.after({
-  "duration": 218959,
+  "duration": 200998,
   "status": "passed"
 });
 });
