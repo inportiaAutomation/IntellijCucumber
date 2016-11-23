@@ -6,6 +6,7 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.MarionetteDriver;
 
+import com.inportia.TestNGDemo.pageObject.ACElections;
 import com.inportia.TestNGDemo.pageObject.HomePage;
 import com.inportia.TestNGDemo.pageObject.PCElectionsResult;
 
@@ -60,6 +61,7 @@ public class HomePageStep
 	WebDriver driver;
 	HomePage home_page; 
 	PCElectionsResult  pc_result;
+	ACElections ac_election;
 	
     @Given("^user is on homepage$")
     public void user_is_on_homepage() throws Throwable {
@@ -95,5 +97,26 @@ public class HomePageStep
        driver.close();
     }
     
+    @When("^user selects year \"([^\"]*)\" and states \"([^\"]*)\" from AC Elections \\(Vidhan Sabha\\)$")
+    public void user_selects_year_and_states_from_AC_Elections_Vidhan_Sabha(String arg1, String arg2) throws Throwable {
+    	home_page.select_drop_down_states_ac(arg2);
+    	home_page.select_drop_down_year_ac(arg1);
+        home_page.click_go_ac();
+    }
+    
+  
+    @Then("^find the voting percentage for overall MH$")
+    public void find_the_voting_percentage_for_overall_MH() throws Throwable {
+        
+    }
+
+    @Then("^find the voting percentage for pimpri from the table$")
+    public void find_the_voting_percentage_for_pimpri_from_the_table() throws Throwable {
+    	ac_election = new ACElections(driver);
+    	ac_election.get_voting_and_verify_not_null();
+    	
+    	
+    	driver.close();
+    }
     
 }

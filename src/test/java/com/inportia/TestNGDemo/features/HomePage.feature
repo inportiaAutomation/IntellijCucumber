@@ -21,12 +21,27 @@ Examples:
 
 
 
-@test_03 @wip
+@test_03
 Scenario: Find the voting percentage for BJP in MH for 2014 
 Given user is on homepage
 When user selects year "2014" and states "Maharashtra" from PC Elelections(Lok Sabha)
 And Clicks go 
 Then value for BJP in table should not be null 
+
+
+@test_04 @wip
+Scenario: Find the voting percentage for MH vidhan sabha election 2014
+Given user is on homepage
+When user selects year "2014" and states "Maharashtra" from AC Elections (Vidhan Sabha)
+Then find the voting percentage for overall MH
+And find the voting percentage for pimpri from the table
+
+
+
+
+
+
+
 
 
 

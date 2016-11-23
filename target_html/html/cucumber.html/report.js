@@ -13,52 +13,52 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 712044,
+  "duration": 188031,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 25,
-  "name": "Find the voting percentage for BJP in MH for 2014",
+  "line": 33,
+  "name": "Find the voting percentage for MH vidhan sabha election 2014",
   "description": "",
-  "id": "test-the-new-homepage;find-the-voting-percentage-for-bjp-in-mh-for-2014",
+  "id": "test-the-new-homepage;find-the-voting-percentage-for-mh-vidhan-sabha-election-2014",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 24,
-      "name": "@test_03"
+      "line": 32,
+      "name": "@test_04"
     },
     {
-      "line": 24,
+      "line": 32,
       "name": "@wip"
     }
   ]
 });
 formatter.step({
-  "line": 26,
+  "line": 34,
   "name": "user is on homepage",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 27,
-  "name": "user selects year \"2014\" and states \"Maharashtra\" from PC Elelections(Lok Sabha)",
+  "line": 35,
+  "name": "user selects year \"2014\" and states \"Maharashtra\" from AC Elections (Vidhan Sabha)",
   "keyword": "When "
 });
 formatter.step({
-  "line": 28,
-  "name": "Clicks go",
-  "keyword": "And "
+  "line": 36,
+  "name": "find the voting percentage for overall MH",
+  "keyword": "Then "
 });
 formatter.step({
-  "line": 29,
-  "name": "value for BJP in table should not be null",
-  "keyword": "Then "
+  "line": 37,
+  "name": "find the voting percentage for pimpri from the table",
+  "keyword": "And "
 });
 formatter.match({
   "location": "HomePageStep.user_is_on_homepage()"
 });
 formatter.result({
-  "duration": 16121513656,
+  "duration": 24170092135,
   "status": "passed"
 });
 formatter.match({
@@ -72,28 +72,28 @@ formatter.match({
       "offset": 37
     }
   ],
-  "location": "HomePageStep.user_selects_year_and_states_from_PC_Elelections_Lok_Sabha(String,String)"
+  "location": "HomePageStep.user_selects_year_and_states_from_AC_Elections_Vidhan_Sabha(String,String)"
 });
 formatter.result({
-  "duration": 772108224,
+  "duration": 3315507515,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageStep.clicks_go()"
+  "location": "HomePageStep.find_the_voting_percentage_for_overall_MH()"
 });
 formatter.result({
-  "duration": 1754145038,
+  "duration": 45981,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageStep.value_for_BJP_in_table_should_not_be_null()"
+  "location": "HomePageStep.find_the_voting_percentage_for_pimpri_from_the_table()"
 });
 formatter.result({
-  "duration": 5685305546,
+  "duration": 3799913292,
   "status": "passed"
 });
 formatter.after({
-  "duration": 200998,
+  "duration": 247970,
   "status": "passed"
 });
 });

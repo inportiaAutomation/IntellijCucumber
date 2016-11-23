@@ -21,6 +21,7 @@ public class PCElectionsResult {
 	  public void get_bjp_vote_pc(String value)
 	  {
 		 List<WebElement> rows = driver.findElements(votes_table);
+		
 		 System.out.println(rows.size());
 		 for(WebElement r : rows)
 		 {
