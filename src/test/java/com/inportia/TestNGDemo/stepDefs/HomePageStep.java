@@ -58,22 +58,14 @@ public class HomePageStep
 //    
     
     
-	WebDriver driver;
+
 	HomePage home_page; 
 	PCElectionsResult  pc_result;
 	ACElections ac_election;
 	
     @Given("^user is on homepage$")
     public void user_is_on_homepage() throws Throwable {
-    	
-    	String path_chrome = System.getProperty("user.dir") + "\\src\\test\\java\\com\\inportia\\TestNGDemo\\tools\\chromedriver.exe";
-    	System.setProperty("webdriver.chrome.driver", path_chrome);
-    	
-    	driver = new ChromeDriver();
-    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    	driver.manage().window().maximize();
-    	
-        home_page = new HomePage(driver);
+        home_page = new HomePage();
     	home_page.user_goes__to_homepage();
     }
 
@@ -90,11 +82,8 @@ public class HomePageStep
 
     @Then("^value for BJP in table should not be null$")
     public void value_for_BJP_in_table_should_not_be_null() throws Throwable {
-       pc_result = new PCElectionsResult(driver);
+       pc_result = new PCElectionsResult();
        pc_result.get_bjp_vote_pc("BJP");
-       
-       
-       driver.close();
     }
     
     @When("^user selects year \"([^\"]*)\" and states \"([^\"]*)\" from AC Elections \\(Vidhan Sabha\\)$")
@@ -112,11 +101,9 @@ public class HomePageStep
 
     @Then("^find the voting percentage for pimpri from the table$")
     public void find_the_voting_percentage_for_pimpri_from_the_table() throws Throwable {
-    	ac_election = new ACElections(driver);
+    	ac_election = new ACElections();
     	ac_election.get_voting_and_verify_not_null();
-    	
-    	
-    	driver.close();
+    
     }
     
 }

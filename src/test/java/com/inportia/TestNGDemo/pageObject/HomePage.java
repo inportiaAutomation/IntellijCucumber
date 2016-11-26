@@ -8,15 +8,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class HomePage {
+import com.inportia.TestNGDemo.utils.BrowserManager;
 
-	  WebDriver driver;
+public class HomePage extends BasePage {
+
+
 	
-	  public HomePage(WebDriver d)
-	  {
-		  driver = d;
-	  }
-	  
+	
 	
       By drop_down_year_pc = By.id("year");
       By drop_down_states_pc = By.id("state");
@@ -38,13 +36,13 @@ public class HomePage {
       
       public void select_year_pc(String value)
       {
-          Select select_year = new Select(driver.findElement(drop_down_year_pc));
+          Select select_year = new Select(BrowserManager.init_browser().findElement(drop_down_year_pc));
           select_year.selectByVisibleText(value);  
       }
       
       public void select_states_pc(String value)
       {
-    	  Select select_year = new Select(driver.findElement(drop_down_states_pc));
+    	  Select select_year = new Select(BrowserManager.init_browser().findElement(drop_down_states_pc));
           select_year.selectByVisibleText(value);
       }
 	
@@ -57,20 +55,20 @@ public class HomePage {
       // new functions for locator in second test case
       public void select_drop_down_states_ac(String state_name)
       {
-    	  Select select_states = new Select(driver.findElement(drop_down_states_ac));
+    	  Select select_states = new Select(BrowserManager.init_browser().findElement(drop_down_states_ac));
     	  select_states.selectByVisibleText(state_name);  
       }
       
       public void select_drop_down_year_ac(String year)
       {
-    	  Select select_year = new Select(driver.findElement(drop_down_year_ac));
+    	  Select select_year = new Select(BrowserManager.init_browser().findElement(drop_down_year_ac));
           select_year.selectByVisibleText(year);  
       }
       
       
       public void click_go_ac()
       {
-    	  List<WebElement> go_buttons = driver.findElements(go_ac);
+    	  List<WebElement> go_buttons = BrowserManager.init_browser().findElements(go_ac);
     	  go_buttons.get(1).click();
       }
       

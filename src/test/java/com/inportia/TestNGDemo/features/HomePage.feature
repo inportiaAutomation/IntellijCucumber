@@ -21,7 +21,7 @@ Examples:
 
 
 
-@test_03
+@test_03 @wip
 Scenario: Find the voting percentage for BJP in MH for 2014 
 Given user is on homepage
 When user selects year "2014" and states "Maharashtra" from PC Elelections(Lok Sabha)
