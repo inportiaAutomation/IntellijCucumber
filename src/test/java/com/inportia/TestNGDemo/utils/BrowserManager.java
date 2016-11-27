@@ -9,10 +9,12 @@ public class BrowserManager
 {
        private static WebDriver driver;
        private static boolean is_created = false;
-       private BrowserManager(){}
+       private  BrowserManager(){}
        
-       public static WebDriver init_browser(String type)
+       public static  WebDriver init_browser(String type)
        {
+    	   if (type == "Chrome") 
+    	   {
     	   if(BrowserManager.is_created == false)
     	   {
     		    String path_chrome = System.getProperty("user.dir") + "\\src\\test\\java\\com\\inportia\\TestNGDemo\\tools\\chromedriver.exe";
@@ -23,6 +25,12 @@ public class BrowserManager
     	    	driver.manage().window().maximize();
     	    	BrowserManager.is_created = true;
     	   }
+    	   }
+    	   if (type == "Firefox")
+    	   {
+    		   
+    	   }
+    	   
     	   return driver;
        }
        

@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
         (
                 features = "src\\test\\java\\com\\inportia\\TestNGDemo\\features",
                 glue = "com\\inportia\\TestNGDemo\\stepDefs",
-                tags = {"@wip"},
+                tags = {"@elections_map_01" , "~@skip"},
                 format = {"pretty","html:target_html/html/cucumber.html","json:target_json/cucumber.json"}
         )
 
