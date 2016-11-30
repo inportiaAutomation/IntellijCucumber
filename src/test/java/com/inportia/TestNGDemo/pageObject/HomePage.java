@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import com.inportia.TestNGDemo.utils.BrowserManager;
+import com.inportia.TestNGDemo.utils.ExcelManager;
+import com.inportia.TestNGDemo.utils.HelperMethods;
 
 public class HomePage extends BasePage {
 
@@ -31,7 +33,9 @@ public class HomePage extends BasePage {
       
       public void user_goes__to_homepage()
       {
+    	  ExcelManager.create_excel_sheet("loginData.xls");
     	  driver.get(homepage_url);
+    	  HelperMethods.take_screenshot("home_page.png");
       }
       
       public void select_year_pc(String value)

@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("EclectionMaps.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("ElectionsMap.feature");
 formatter.feature({
   "line": 1,
   "name": "Elections Map",
@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4149298744,
+  "duration": 4214421371,
   "status": "passed"
 });
 formatter.scenario({
@@ -53,14 +53,14 @@ formatter.match({
   "location": "HomePageStep.user_is_on_homepage()"
 });
 formatter.result({
-  "duration": 35432216208,
+  "duration": 14024757633,
   "status": "passed"
 });
 formatter.match({
   "location": "ElectionsMapStep.user_is_on_Election_Map()"
 });
 formatter.result({
-  "duration": 780450,
+  "duration": 456528,
   "status": "passed"
 });
 formatter.match({
@@ -77,7 +77,7 @@ formatter.match({
   "location": "ElectionsMapStep.user_selects_and_state_as(String,String)"
 });
 formatter.result({
-  "duration": 2765856,
+  "duration": 1729635,
   "status": "passed"
 });
 formatter.match({
@@ -90,7 +90,7 @@ formatter.match({
   "location": "ElectionsMapStep.user_selects_year_as(String)"
 });
 formatter.result({
-  "duration": 78003,
+  "duration": 35307,
   "status": "passed"
 });
 formatter.match({
@@ -103,11 +103,11 @@ formatter.match({
   "location": "ElectionsMapStep.find_the_turnout_percentage_for(String)"
 });
 formatter.result({
-  "duration": 61992,
+  "duration": 28327,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2319757087,
+  "duration": 2315897535,
   "status": "passed"
 });
 });

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 4149298744,
+              "duration": 4214421371,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 2319757087,
+              "duration": 2315897535,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35432216208,
+              "duration": 14024757633,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 780450,
+              "duration": 456528,
               "status": "passed"
             },
             "line": 6,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 2765856,
+              "duration": 1729635,
               "status": "passed"
             },
             "line": 7,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 78003,
+              "duration": 35307,
               "status": "passed"
             },
             "line": 8,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 61992,
+              "duration": 28327,
               "status": "passed"
             },
             "line": 9,
@@ -127,6 +127,6 @@
     "description": "",
     "id": "elections-map",
     "keyword": "Feature",
-    "uri": "EclectionMaps.feature"
+    "uri": "ElectionsMap.feature"
   }
 ]
