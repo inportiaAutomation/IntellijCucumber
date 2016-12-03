@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4214421371,
+  "duration": 4961630724,
   "status": "passed"
 });
 formatter.scenario({
@@ -53,14 +53,14 @@ formatter.match({
   "location": "HomePageStep.user_is_on_homepage()"
 });
 formatter.result({
-  "duration": 14024757633,
+  "duration": 9091703797,
   "status": "passed"
 });
 formatter.match({
   "location": "ElectionsMapStep.user_is_on_Election_Map()"
 });
 formatter.result({
-  "duration": 456528,
+  "duration": 1863881,
   "status": "passed"
 });
 formatter.match({
@@ -77,7 +77,7 @@ formatter.match({
   "location": "ElectionsMapStep.user_selects_and_state_as(String,String)"
 });
 formatter.result({
-  "duration": 1729635,
+  "duration": 6195148,
   "status": "passed"
 });
 formatter.match({
@@ -90,7 +90,7 @@ formatter.match({
   "location": "ElectionsMapStep.user_selects_year_as(String)"
 });
 formatter.result({
-  "duration": 35307,
+  "duration": 153955,
   "status": "passed"
 });
 formatter.match({
@@ -103,11 +103,11 @@ formatter.match({
   "location": "ElectionsMapStep.find_the_turnout_percentage_for(String)"
 });
 formatter.result({
-  "duration": 28327,
+  "duration": 166682,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2315897535,
+  "duration": 2103405607,
   "status": "passed"
 });
 });

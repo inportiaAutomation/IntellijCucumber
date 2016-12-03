@@ -4,13 +4,13 @@ package com.inportia.TestNGDemo.pageObject;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import com.inportia.TestNGDemo.utils.BrowserManager;
 import com.inportia.TestNGDemo.utils.ExcelManager;
 import com.inportia.TestNGDemo.utils.HelperMethods;
+import com.inportia.TestNGDemo.utils.PropertiesManager;
 
 public class HomePage extends BasePage {
 
@@ -34,8 +34,12 @@ public class HomePage extends BasePage {
       public void user_goes__to_homepage()
       {
     	  ExcelManager.create_excel_sheet("loginData.xls");
-    	  driver.get(homepage_url);
-    	  HelperMethods.take_screenshot("home_page.png");
+    	  PropertiesManager.set_property("user_name_2", "sohail_chd_2", "userData.properties",true);
+    	  PropertiesManager.set_property("user_name_3", "sohail_chd_3", "userData.properties",true);
+     	  System.out.println(PropertiesManager.get_property("user_name_3","userData.properties"));
+     	  System.out.println(PropertiesManager.get_property("browser_type", "browserType.properties"));
+     	  BrowserManager.init_browser().get(homepage_url);
+     	  //HelperMethods.take_screenshot("home_page.png");
       }
       
       public void select_year_pc(String value)
